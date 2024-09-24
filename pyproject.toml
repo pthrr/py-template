@@ -9,7 +9,7 @@ dependencies = ["marshmallow>=3.22.0"]
 dev-dependencies = ["pytest>=8.3.3"]
 
 [tool.uv.workspace]
-members = ["src/lib"]
+members = ["src/libx"]
 
 [tool.ruff]
 line-length = 120
@@ -22,7 +22,6 @@ select = [
   "F",   # Pyflakes rules
   "B",   # Bugbear rules for potential issues
   "I",   # Import conventions
-  "D",   # Docstring conventions
   "Q",   # Additional checks for quoting
   "SIM", # Simplifications (best practices and code improvements)
   "C90", # Prefer Python 3 conventions over Python 2 (if applicable)
@@ -32,10 +31,6 @@ select = [
 ]
 ignore = [
   "E203", # Whitespace before ':' (compatible with PEP 8)
-  "D211",
-  "D212",
-  "D100",
-  "D103",
   "E501",
 ]
 extend-select = [

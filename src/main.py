@@ -6,7 +6,7 @@ import logging
 import sys
 import typing
 
-from lib import calc
+from libx import calc
 
 logger = logging.getLogger(__name__)
 
