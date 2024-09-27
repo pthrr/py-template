@@ -3,7 +3,7 @@ requires-python = ">=3.9"
 
 [manifest]
 members = [
-    "lib",
+    "libx",
     "py-template",
 ]
 
@@ -44,7 +44,7 @@ wheels = [
 ]
 
 [[package]]
-name = "lib"
+name = "libx"
 version = "0.1.0"
 source = { virtual = "src/libx" }
 dependencies = [

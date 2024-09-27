@@ -3,4 +3,4 @@ def calc(a: float, b: float) -> float:
 
 
 if __name__ == "__main__":
-    raise
+    raise NotImplementedError
