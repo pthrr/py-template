@@ -3,7 +3,11 @@ name = "py-template"
 version = "0.1.0"
 readme = "README.md"
 requires-python = ">=3.9"
-dependencies = ["marshmallow>=3.22.0"]
+dependencies = [
+    "marshmallow>=3.22.0",
+    "numpy>=2.0.2",
+    "torch>=2.7.0",
+]
 
 [tool.uv]
 dev-dependencies = ["pytest>=8.3.3"]

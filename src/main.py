@@ -6,13 +6,19 @@ import logging
 import sys
 import typing
 
+import numpy as np
+import torch
 from libx import calc
 
 logger = logging.getLogger(__name__)
 
 
 def main(args: argparse.Namespace) -> int:
-    print(f"1+1= {calc(1, 1)}")
+    a = np.random.randn(2, 3, 4)
+    at = torch.from_numpy(a)
+    s = torch.einsum("ijk->", at)
+    print("tensor sum:", s.item())
+    print(f"1+1= {calc(s.item(), 1)}")
     return 0
 
 
