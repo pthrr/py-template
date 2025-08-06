@@ -10,3 +10,7 @@ tasks:
   run_debug:
     cmds:
       - uv run src/main.py --debug
+
+  test:
+    cmds:
+      - uv run nox -s tests
